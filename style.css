@@ -9,53 +9,62 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 h1 {
   font-size: 4vw;
   color: black;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2vw;
+  font-weight: bold;
+  display:  inline;
 }
 
 .grid {
   width: 100%;
-  height: 2500px;
+  height: 190vh;
+  color: white;
   display: grid;
-  grid-template: repeat(24, 1fr) / repeat(8, 1fr);
+  grid-template: repeat(18, 1fr) / repeat(12, 1fr);
   background-color: white;
   margin: 0 auto;
+  text-align: center;
 }
 
 .space {
-  grid-column: 1 / 9;
+  grid-column: 1 / 13;
+  grid-row-end: span 2;
+}
+
+.box {
+  border-radius: 4vw;
+  background-color: black;
+  grid-row-end: span 4;
 }
 
 .image-left {
-  border-radius: 30px;
-  grid-column: 6 / 8;
-  background-color: red;
-  grid-row-end: span 2;
+  grid-column: 9 / 12;
 }
 
 .image-right {
-  border-radius: 30px;
-  grid-column: 2 / 4;
-  background-color: black;
-  grid-row-end: span 2;
+  grid-column: 2 / 5;
 }
 
 .left {
-  border-radius: 30px;
-  grid-column: 2 / 5;
-  background-color: red;
-  float: left;
-  grid-row-end: span 2;
+  grid-column: 2 / 8;
 }
 
 .right {
-  border-radius: 30px;
-  grid-column: 5 / 8;
-  background-color: black;
-  float: right;
-  grid-row-end: span 2;
+  grid-column: 6 / 12;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }

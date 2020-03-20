@@ -5,18 +5,30 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 h1 {
   font-size: 4vw;
   color: black;
-  text-align: center;
+  border: 1vw solid black;
+  display: inline-block;
+  padding: 2vw 5vw;
+  margin-bottom: 5vw;
 }
 
 h2 {
   font-size: 2vw;
   font-weight: bold;
   display: inline;
+  margin: 0 2vw;
+}
+
+img {
+  width: 95%;
+  height: auto;
+  border-radius: 4vw;
+  margin: 2.6%;
 }
 
 .grid {
@@ -27,7 +39,6 @@ h2 {
   grid-template: repeat(18, 1fr) / repeat(12, 1fr);
   background-color: white;
   margin: 0 auto;
-  text-align: center;
 }
 
 .space {
@@ -36,36 +47,38 @@ h2 {
 }
 
 .box {
-  border-radius: 4vw;
   background-color: black;
   grid-row-end: span 4;
   margin: 0;
   display: : flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .image-left {
   grid-column: 9 / 12;
+  border-radius: 4vw;
 }
 
 .image-right {
   grid-column: 2 / 5;
+  border-radius: 4vw;
 }
 
 .left {
-  grid-column: 2 / 8;
+  grid-column: 1 / 8;
+  border-top-right-radius: 4vw;
+  border-bottom-right-radius: 4vw;
 }
 
 .right {
-  grid-column: 6 / 12;
+  grid-column: 6 / 13;
+  border-top-left-radius: 4vw;
+  border-bottom-left-radius: 4vw;
 }
 
-.text-left {
-  text-align: left;
-  margin-left: 2vw;
-}
-
-.text-right {;
-  text-align: right;
+.text {
+  text-align: justify;
+  margin: 1.5vw 6vw;
 }
